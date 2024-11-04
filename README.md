@@ -43,3 +43,10 @@ Ctrl + D
 ```
 Al salir del terminal se cierra el contenedor
 
+## 7. ¿Cuánta memoria en el disco duro ocupaste?
+```bash
+//Uso de memoria total
+sudo docker system df
+//Uso de memoria específico
+sudo docker ps -as
+```
