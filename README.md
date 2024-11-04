@@ -20,3 +20,10 @@ sudo docker run -d --name dam_alp1 alpine tail -f /dev/null
 //Acceder al contenedor
 sudo docker exec -it dam_alp1 sh
 ```
+## 4. Comprueba que ip tiene y si puedes hacer un ping a google.com
+```bash
+//Comprobar la ip. En la sección "Networks" se puede ver la ip
+sudo docker inspect dam_alp1
+//Hacer ping
+sudo docker exec -it dam_alp1 ping google.com
+```
