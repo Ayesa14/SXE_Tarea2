@@ -13,3 +13,10 @@ sudo docker ps -a
 ```
 El nombre del contenedor se genera de manera aleatoria
 
+## 3. Crea un contenedor con el nombre 'dam_alp1'. ¿Cómo puedes acceder a él?
+```bash
+//Crea un contenedor que se mantenga en ejecución
+sudo docker run -d --name dam_alp1 alpine tail -f /dev/null
+//Acceder al contenedor
+sudo docker exec -it dam_alp1 sh
+```
