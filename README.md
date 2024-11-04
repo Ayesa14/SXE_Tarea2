@@ -50,3 +50,8 @@ sudo docker system df
 //Uso de memoria específico
 sudo docker ps -as
 ```
+
+## 8.  ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?
+```bash
+sudo docker status
+```
