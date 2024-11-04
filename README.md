@@ -27,3 +27,10 @@ sudo docker inspect dam_alp1
 //Hacer ping
 sudo docker exec -it dam_alp1 ping google.com
 ```
+## 5. Crea un contenedor con el nombre 'dam_alp2'. ¿Puedes hacer ping entre los contenedores?
+```bash
+//Crea un contenedor que se mantenga en ejecución
+sudo docker run -d --name dam_alp2 alpine tail -f /dev/null
+//Hacer ping entre contenedores
+sudo docker exec -it dam_alp1 ping
+```
