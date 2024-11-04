@@ -34,3 +34,12 @@ sudo docker run -d --name dam_alp2 alpine tail -f /dev/null
 //Hacer ping entre contenedores
 sudo docker exec -it dam_alp1 ping
 ```
+## 6. Sal del terminal, ¿que ocurrió con el contenedor?
+```bash
+//Salir del terminal opción 1
+exit
+//Salir del terminal opción 2
+Ctrl + D
+```
+Al salir del terminal se cierra el contenedor
+
